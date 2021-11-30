@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg5"
+   version="1.1"
+   viewBox="0 0 8.4666662 8.4666662"
+   height="8.4666662mm"
+   width="8.4666662mm"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(-37.027756,-1.1565672)">
+    <g
+       style="fill:none"
+       id="g26"
+       transform="matrix(0.26458333,0,0,0.26458333,36.930483,1.1565672)">
+      <rect
+         x="0.367645"
+         width="32"
+         height="32"
+         rx="8"
+         fill="#ededed"
+         id="rect17"
+         y="0" />
+    </g>
+    <g
+       id="g298"
+       transform="translate(0,0.16665197)">
+      <g
+         style="fill:none"
+         id="g64"
+         transform="matrix(0.26458333,0,0,0.26458333,37.72421,6.1794032)">
+        <path
+           d="M 1.24127,7.99883 C 2.47072,5.87078 4.23854,4.10374 6.36712,2.87522 8.49571,1.6467 10.9101,0.999975 13.3678,1 c 2.4577,3e-5 4.872,0.64681 7.0006,1.87537 2.1286,1.22856 3.8964,2.99563 5.1258,5.12371"
+           stroke="#b0b0b0"
+           stroke-width="1.5"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           id="path55" />
+      </g>
+      <g
+         id="g93"
+         transform="translate(164.90943,-6.5640933)">
+        <g
+           style="fill:none"
+           id="g45"
+           transform="matrix(0.26458333,0,0,0.26458333,-125.86416,8.7431556)">
+          <path
+             opacity="0.2"
+             d="m 8.36765,16 c 4.41825,0 7.99995,-3.5817 7.99995,-8 0,-4.41828 -3.5817,-8 -7.99995,-8 -4.41828,0 -8.000005,3.58172 -8.000005,8 0,4.4183 3.581725,8 8.000005,8 z"
+             fill="#ffffff"
+             id="path36" />
+        </g>
+        <g
+           style="fill:none"
+           id="g83"
+           transform="matrix(0.26458333,0,0,0.26458333,-126.12402,8.469114)">
+          <path
+             d="m 9.36765,17 c 4.41825,0 7.99995,-3.5817 7.99995,-8 0,-4.41828 -3.5817,-8 -7.99995,-8 -4.41828,0 -8,3.58172 -8,8 0,4.4183 3.58172,8 8,8 z"
+             stroke="#b0b0b0"
+             stroke-width="1.5"
+             stroke-miterlimit="10"
+             id="path74" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

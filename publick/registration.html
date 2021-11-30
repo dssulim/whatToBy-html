@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>чОКупить - регистрация</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <img class="logo" src="../src/img/logo1.svg" alt="">
+    </div>
+    <div class="header-right">
+        <img class="closeX" src="../src/img/closeXblue.svg" alt="">
+    </div>
+</header>
+
+<div class="content">
+    <div class="section-heading">
+        <h3 class="h3">Регистрация</h3>
+        <p class="section-content">
+            Заполните регистрационные данные. Это займет совсем мало времени
+        </p>
+    </div>
+    <form class="form" action="#" method="post">
+
+        <label class="form-label" for="user_email">
+            Введите ваш e-mail
+            <input class="form-input" type="email" placeholder="for_example@gmail.com" id="user_email">
+        </label><br>
+
+        <label class="form-label" for="user_name">
+            Введите ваше имя
+            <input class="form-input" type="text" placeholder="Name" id="user_name">
+        </label><br>
+
+        <label class="form-label" for="user_password">
+            Установите пароль
+            <input class="form-input form-font-password" type="password" id="user_password">
+            <img class="display-password-pic" src="../src/img/eye.svg" alt="display" onclick="show_hide_password(`user_password`)">
+        </label><br>
+
+        <label class="form-label" for="user_password_repeat">
+            Повторите пароль
+            <input class="form-input form-font-password" type="password" id="user_password_repeat">
+            <img class="display-password-pic" src="../src/img/eye.svg" alt="display" onclick="show_hide_password(`user_password_repeat`)">
+        </label><br>
+
+        <div class="message_ok"><img src="../src/img/greenCheckMark.svg" alt=""> Пароли совпадают</div>
+        <br>
+        <input class="button" type="submit" value="Зарегистироваться">
+        </form>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="../src/js/displayPassword.js"></script>
+</body>
+</html>

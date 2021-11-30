@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>чОКупить - вход</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <img class="logo" src="../src/img/logo1.svg" alt="">
+  </div>
+  <div class="header-right">
+    <img class="closeX" src="../src/img/closeXblue.svg" alt="">
+  </div>
+</header>
+
+<div class="content">
+  <div class="section-heading">
+    <h3 class="h3">Вход</h3>
+    <p class="section-content">
+      Введите ваши учетные данные
+    </p>
+  </div>
+  <form class="form" action="#" method="post">
+
+    <label class="form-label" for="user_email">
+      Введите ваш e-mail
+      <input class="form-input" type="email" placeholder="for_example@gmail.com" id="user_email">
+    </label><br>
+
+    <label class="form-label" for="user_password">
+      Введите пароль
+      <input class="form-input form-font-password" type="password" id="user_password">
+      <img class="display-password-pic" src="../src/img/eye.svg" alt="display" onclick="show_hide_password(`user_password`)">
+    </label><br>
+
+    <input class="button" type="submit" value="Войти">
+  </form>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="../src/js/displayPassword.js"></script>
+
+</body>
+</html>

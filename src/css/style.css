@@ -1,0 +1,249 @@
+@import url("../fonts/ProximaSoftThin/style.css");
+@import url("../fonts/ProximaSoftLight/style.css");
+@import url("../fonts/ProximaSoftRegular/style.css");
+
+/* тэнги */
+
+body {
+    font-family: 'Proxima Soft', sans-serif;
+    margin: 0 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #2C9AB7;
+
+}
+
+a:visited {
+    color: #2C9AB7;
+}
+
+/* верх */
+
+.header {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+}
+
+.logo {
+    width: 95px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    margin-left: 14px;
+    background-color: #C4C4C4;
+    border-radius: 7px;
+    color: #ffffff;
+    height: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeX {
+    width: 12px;
+}
+
+/* общее содержимое страниц */
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 67px;
+}
+
+.img-big {
+    margin-top: 60px;
+}
+
+.description {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 47px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #242E42;
+    font-size: 15px;
+}
+
+.h3 {
+    font-weight: 700;
+}
+
+.section-heading {
+    width: 100%;
+}
+
+.section-heading-with-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-content {
+    color: #575F6E;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.button {
+    background-color: #2C9AB7;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 32px;
+}
+
+.button-pic {
+    height: 18px;
+    margin-left: 16px;
+}
+
+.group-control-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Форма, поля формы */
+
+.form {
+    border: 1px solid #E2E4E5;
+    border-radius: 10px;
+    padding: 32px;
+    color: #242E42;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.form > .form-label:not(:first-child) {
+    margin-top: 32px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px 16px;
+
+    border-bottom: 1px solid #E2E4E5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom: 1px solid #2C9AB7;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* IE 10+ */
+
+.form-font-password {
+    letter-spacing: 6px;
+    font-size: 16px;
+}
+
+.display-password-pic {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+}
+
+.message_ok {
+    margin-top: 8px;
+    color: #34C759;
+    font-size: 14px;
+    line-height: 16px;
+    visibility: visible;
+}
+
+.message_ok > img {
+    height: 10px;
+}
+
+/* календарь и список по календарю */
+
+.table-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.table-row>div {
+    outline: 1px solid #cccccc;
+}
+
+.day-calendar {
+    width: 20%;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.shop-name {
+
+}
+
+.completed-list-items {
+
+}
+
+.participants {
+    display: flex;
+}
+
+.avatar-in-list {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
