@@ -1,12 +1,19 @@
 @import url("../fonts/ProximaSoftThin/style.css");
 @import url("../fonts/ProximaSoftLight/style.css");
 @import url("../fonts/ProximaSoftRegular/style.css");
+@import url("../fonts/ProximaSoftBlack/style.css");
+@import url("../fonts/ProximaSoftBold/style.css");
+@import url("../fonts/ProximaSoftExtraBold/style.css");
+@import url("../fonts/ProximaSoftMedium/style.css");
+@import url("../fonts/ProximaSoftSemiBold/style.css");
 
 /* тэнги */
 
 body {
+    color: #242E42;
     font-family: 'Proxima Soft', sans-serif;
     margin: 0 16px;
+    background: #FAFAFA;
 }
 
 a {
@@ -57,6 +64,50 @@ a:visited {
     width: 12px;
 }
 
+.shim-user-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.shim-modal-show {
+    display: block;
+}
+
+.user-menu {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 138px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.user-menu-item {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 48px;
+    padding: 0 16px 0 16px;
+    text-align: right;
+}
+
+.user-menu > li > a {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
+    display: block;
+}
+
 /* общее содержимое страниц */
 
 .content {
@@ -82,6 +133,8 @@ a:visited {
 
 .h3 {
     font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .section-heading {
@@ -215,15 +268,21 @@ input:focus:-ms-input-placeholder {
 
 .table-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    font-weight: 500;
 }
 
-.table-row>div {
-    outline: 1px solid #cccccc;
+.not-today {
+    opacity: 0.5;
 }
+
+/*.table-row>div {*/
+/*    outline: 1px solid #cccccc;*/
+/*}*/
 
 .day-calendar {
-    width: 20%;
+    width: 65px;
     height: 36px;
     font-size: 14px;
     line-height: 18px;
@@ -231,19 +290,40 @@ input:focus:-ms-input-placeholder {
 }
 
 .shop-name {
-
+    width: 115px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 10px;
 }
 
 .completed-list-items {
-
+    width: 49px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .participants {
+    width: 82px;
     display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .avatar-in-list {
     margin-block-start: 0;
     margin-block-end: 0;
-}
+    margin-left: 9px;
+    width: 15px;
+    height: 15px;
+    background-color: #C4C4C4;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
