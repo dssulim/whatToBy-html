@@ -12,7 +12,7 @@
             <div class="header-left">
                 <img class="logo" src="../src/img/logo1.svg" alt="">
             </div>
-            <div class="header-right">
+            <div class="header-right" onclick="displayHideUserMenu(`header-right`, `shim-user-menu`, `user-menu`, `user-menu-item`)">
                 <div class="" id="user_with_personal_avatar" hidden></div>
                 <p class="avatar" id="user_without_personal_avatar menu_on_avatar">A</p>
                 <div class="shim-user-menu">
@@ -31,8 +31,20 @@
             <div class="section-heading section-heading-with-button">
                 <h3 class="h3">Мои магазины</h3>
                 <div class="group-control-buttons">
-                    <img class="button-pic" src="../src/img/settings.svg" alt="settings">
-                    <img class="button-pic" src="../src/img/calendar.svg" alt="calendar">
+                    <div class="settings-button" onclick="displayHideUserMenu(`settings-button`, `shim-user-menu-settings`, `user-menu-settings`, `user-menu-item-s`)">
+                        <img class="button-pic" src="../src/img/settings.svg" alt="settings">
+                        <div class="shim-user-menu-settings">
+                            <ul class="user-menu-settings">
+                                <li class="user-menu-item-s"><a href="#">Все списки</a></li>
+                                <li class="user-menu-item-s"><a href="#">Сегодняшние</a></li>
+                                <li class="user-menu-item-s"><a href="#">Будущие</a></li>
+                                <li class="user-menu-item-s"><a href="#">По дате</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="calendar-button">
+                        <img class="button-pic" src="../src/img/calendar.svg" alt="calendar">
+                    </div>
                 </div>
             </div>
             <div class="table-list">
