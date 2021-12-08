@@ -1,15 +1,17 @@
 function displayHideUserMenu(myParentElement, shim, userMenu, userMenuItem){
     //console.log(myParentElement, shim, userMenu, userMenuItem);
+    let subModal = false;
     const shimUserMenu = document.querySelector("." + shim);
     const targetClosestUserMenu = "." + userMenu;
     const targetClosestUserMenuItem = "." + userMenuItem;
+
     const shimMenu = "." + shim;
     const parentElement = document.querySelector("." + myParentElement);
     shimUserMenu.classList.add("shim-modal-show");
 
     parentElement.addEventListener("click", function(event){
         let target = event.target;
-        if(target.closest(targetClosestUserMenu) && !target.closest(targetClosestUserMenuItem)) {
+        if(target.closest(targetClosestUserMenu) ) {
             event.stopPropagation();
         }
         else if( target.closest(shimMenu) ) {
@@ -19,33 +21,27 @@ function displayHideUserMenu(myParentElement, shim, userMenu, userMenuItem){
             shimUserMenu.classList.add("shim-modal-show");
         }
     });
-}
+};
 
-// window.addEventListener('DOMContentLoaded', function() {
-//     let headerRight = document.querySelector(".header-right");
-//     let shimUserMenu = document.querySelector(".shim-user-menu");
-//
-//     headerRight.addEventListener("click", function(event){
-//         // console.log(event.target);
-//         let target = event.target;
-//         if(target.closest(".user-menu") && !target.closest(".user-menu-item"))
-//             event.stopPropagation();
-//         else if( target.closest(".shim-user-menu") )
-//             shimUserMenu.classList.remove("shim-modal-show");
-//         else shimUserMenu.classList.add("shim-modal-show");
-//     });
-//
-//     let settingsButton = document.querySelector(".settings-button");
-//     let shimUserMenuSettings = document.querySelector(".shim-user-menu-settings");
-//     //console.log(shimUserMenuSettings); // null
-//
-//     settingsButton.addEventListener("click", function(event){
-//         //console.log(event.target);
-//         let target = event.target;
-//         if(target.closest(".user-menu-settings") && !target.closest(".user-menu-item-s"))
-//             event.stopPropagation();
-//         else if( target.closest(".shim-user-menu-settings") )
-//             shimUserMenuSettings.classList.remove("shim-modal-show-s");
-//         else shimUserMenuSettings.classList.add("shim-modal-show-s");
-//     });
-// });
+function displayHideSubModal(subMyParentElement, subShim, subUserMenu, subUserMenuItem){
+    const subShimUserMenu = document.querySelector("." + subShim);
+    const subTargetClosestUserMenu = "." + subUserMenu;
+    const subTargetClosestUserMenuItem = "." + subUserMenuItem;
+
+    const subShimMenu = "." + subShim;
+    const subParentElement = document.querySelector("." + subMyParentElement);
+    subShimUserMenu.classList.add("shim-modal-show");
+
+    subParentElement.addEventListener("click", function(event){
+        let subtarget = event.target;
+        if(subtarget.closest(subTargetClosestUserMenu) && !subtarget.closest(subTargetClosestUserMenuItem) ) {
+            event.stopPropagation();
+        }
+        else if( subtarget.closest(subShimMenu) ) {
+            subShimUserMenu.classList.remove("shim-modal-show");
+        }
+        else {
+            subShimUserMenu.classList.add("shim-modal-show");
+        }
+    });
+}

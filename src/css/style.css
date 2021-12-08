@@ -64,8 +64,9 @@ a:visited {
     width: 12px;
 }
 
+/* пункты пользовательского меню */
+
 .settings-button {
-    /*position: relative;*/
 }
 
 .shim-user-menu-settings {
@@ -89,7 +90,7 @@ a:visited {
 }
 
 .shim-modal-show, .shim-modal-show-s {
-    display: block;
+    display: block !important;
 }
 
 .user-menu, .user-menu-settings {
@@ -105,7 +106,7 @@ a:visited {
     top: 10px;
     z-index: 1;
     border-radius: 4px;
-    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
 }
 
 .user-menu-settings {
@@ -127,13 +128,75 @@ a:visited {
     display: block;
 }
 
+.umis-on-date {
+}
+
+.shim-umis-on-date{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0, 0.5);
+    z-index: 1;
+}
+
+.subModal {
+
+}
+
+.form-user-menu-settings-on-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px 8px 0 0;
+    background-color: #FAFAFA;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-input-on-date {
+    padding: 8px 16px 8px 40px;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 28px;
+    height: 40px;
+}
+
+.calendar-pic-input {
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    height: 20px;
+    opacity: 0.38;
+}
+
+.form-label-on-date-text {
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.form-submit-on-date-btn {
+    margin-bottom: 40px;
+}
+
+
 /* общее содержимое страниц */
 
 .content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 67px;
+    /*padding-bottom: 67px;*/
 }
 
 .img-big {
@@ -150,10 +213,15 @@ a:visited {
     font-size: 15px;
 }
 
-.h3 {
+.h3, .h3-form {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    width: 100%;
+}
+
+.h3-form {
+    font-weight: 600;
 }
 
 .section-heading {
@@ -207,6 +275,7 @@ a:visited {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     font-size: 14px;
     line-height: 20px;
     width: 100%;
@@ -217,8 +286,9 @@ a:visited {
 }
 
 .form-input {
-    width: 100%;
+    /*width: 100%;*/
     padding: 8px 16px;
+    background-color: #FAFAFA;
 
     border-bottom: 1px solid #E2E4E5;
     border-top: none;

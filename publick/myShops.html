@@ -38,10 +38,35 @@
                                 <li class="user-menu-item-s"><a href="#">Все списки</a></li>
                                 <li class="user-menu-item-s"><a href="#">Сегодняшние</a></li>
                                 <li class="user-menu-item-s"><a href="#">Будущие</a></li>
-                                <li class="user-menu-item-s"><a href="#">По дате</a></li>
+                                <li class="user-menu-item-s umis-on-date"
+                                    onclick="displayHideSubModal(
+                                        `umis-on-date`, `shim-umis-on-date`, `form-user-menu-settings-on-date`, `form-submit-on-date-btn`
+                                        )"><a href="#">По дате</a>
+                                    <div class="shim-umis-on-date subModal">
+                                        <form action="" class="form-user-menu-settings-on-date">
+                                            <h3 class="h3-form">Выбор списков по дате</h3>
+                                            <label for="on-date-from" class="form-label">
+                                                <img class="calendar-pic-input" src="../src/img/calendarGray.svg" alt="&#128197;">
+                                                <input type="text" class="form-input-on-date" id="on-date-from" placeholder="Начиная с даты">
+                                                <span class="form-label-on-date-text">YYYY-MM-DD format</span>
+                                            </label>
+                                            <label for="on-date-to" class="form-label">
+                                                <img class="calendar-pic-input" src="../src/img/calendarGray.svg" alt="&#128197;">
+                                                <input type="text" class="form-input-on-date" id="on-date-to" placeholder="По дату">
+                                                <span class="form-label-on-date-text">YYYY-MM-DD format</span>
+                                            </label>
+                                            <input type="submit" class="button form-submit-on-date-btn" value="Применить">
+                                        </form>
+                                    </div>
+                                </li>
                             </ul>
+
                         </div>
+
                     </div>
+
+
+
                     <div class="calendar-button">
                         <img class="button-pic" src="../src/img/calendar.svg" alt="calendar">
                     </div>
