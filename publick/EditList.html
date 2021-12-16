@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>чОКупить-редактировать список</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <img class="logo" src="../src/img/logo1.svg" alt="">
+    </div>
+    <div class="header-right" onclick="displayHideUserMenu(`header-right`, `shim-user-menu`, `user-menu`, `user-menu-item`)">
+        <div class="" id="user_with_personal_avatar" hidden></div>
+        <p class="avatar" id="user_without_personal_avatar menu_on_avatar">A</p>
+        <div class="shim-user-menu">
+            <ul class="user-menu">
+                <li class="user-menu-item"><a href="myShop.html">Мои магазины</a></li>
+                <li class="user-menu-item"><a href="NewList.html">Новый список</a></li>
+                <li class="user-menu-item"><a href="#">Настройки</a></li>
+                <li class="user-menu-item"><a href="index.html">Выйти</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+<div class="content">
+    <div class="section-heading">
+        <h3 class="h3">Редактировать список</h3>
+    </div>
+    <form action="myShop.html" class="form-new-list" method="post">
+        <label class="form-new-list-label">
+            <div class="form-new-list-select-and-button">
+                <select name="stores" class="form-select-store">
+                    <option value="without_store">Без магазина</option>
+                    <option value="IKEA">IKEA</option>
+                    <option value="Pyatyorochka">Пятерочка</option>
+                    <option value="Magnit">Магнит</option>
+                </select>
+                <input type="button" value="+" class="btn-circle-plus">
+            </div>
+            <span class="form-label-text">Выберите магазин</span>
+        </label>
+        <label class="form-new-list-label">
+            <span class="label-border-text">Название</span>
+            <input type="text" class="form-new-list-name-input" placeholder="Название списка" value="На ужин">
+            <img src="../src/img/closeX.svg" alt="X" class="X-pic-input">
+        </label>
+        <label class="form-new-list-label">
+            <span class="label-border-text">Date</span>
+            <input type="text" class="form-new-list-date" placeholder="Дата" value="2021-12-31">
+            <img class="calendar-pic-input" src="../src/img/calendarGray.svg" alt="&#128197;">
+            <span class="form-label-on-date-text form-label-text">YYYY-MM-DD format</span>
+        </label>
+        <label class="form-new-list-label">
+            <span class="label-border-text">Участники</span>
+            <div class="form-new-list-select-and-button">
+                <select name="participants" class="form-select-participants" onchange="this.style.color='rgba(0, 0, 0, 0.6)'">
+                    <option class="display-none" value="" disabled selected>Добавить участника</option>
+                    <option value="Anton">Антон</option>
+                    <option value="Ivan">Иван</option>
+                    <option value="Lena">Лена</option>
+                    <option value="Olga">Ольга</option>
+                </select>
+                <input type="button" value="+" class="btn-circle-plus">
+            </div>
+            <span class="form-label-text">alex@mail.ru</span>
+        </label>
+        <label class="form-new-list-label">
+            <div class="action-list">
+                <img src="../src/img/plus.svg" alt=""> <div class="title-of-the-item">Добавить элемент</div>
+            </div>
+        </label>
+        <label class="form-new-list-label">
+            <input type="submit" class="button" value="Сохранить">
+        </label>
+    </form>
+
+</div>
+
+
+<script src="../src/js/displayHideUserMenu.js"></script>
+</body>
+</html>

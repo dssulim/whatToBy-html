@@ -21,7 +21,7 @@ function displayHideUserMenu(myParentElement, shim, userMenu, userMenuItem){
             shimUserMenu.classList.add("shim-modal-show");
         }
     });
-};
+}
 
 function displayHideSubModal(subMyParentElement, subShim, subUserMenu, subUserMenuItem){
     const subShimUserMenu = document.querySelector("." + subShim);
@@ -45,3 +45,4 @@ function displayHideSubModal(subMyParentElement, subShim, subUserMenu, subUserMe
         }
     });
 }
+

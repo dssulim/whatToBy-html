@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>чОКупить - регистрация</title>
+    <title>чОКупить-регистрация</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
             Заполните регистрационные данные. Это займет совсем мало времени
         </p>
     </div>
-    <form class="form" action="#" method="post">
+    <form class="form" action="myShopsOnDate.html" method="post">
 
         <label class="form-label" for="user_email">
             Введите ваш e-mail
@@ -39,19 +39,21 @@
         <label class="form-label" for="user_password">
             Установите пароль
             <input class="form-input form-font-password" type="password" id="user_password">
-            <img class="display-password-pic" src="../src/img/eye.svg" alt="display" onclick="show_hide_password(`user_password`)">
+            <img class="display-password-pic" src="../src/img/eye.svg" alt="display"
+                 onclick="show_hide_password(`user_password`)">
         </label><br>
 
         <label class="form-label" for="user_password_repeat">
             Повторите пароль
             <input class="form-input form-font-password" type="password" id="user_password_repeat">
-            <img class="display-password-pic" src="../src/img/eye.svg" alt="display" onclick="show_hide_password(`user_password_repeat`)">
+            <img class="display-password-pic" src="../src/img/eye.svg" alt="display"
+                 onclick="show_hide_password(`user_password_repeat`)">
         </label><br>
 
         <div class="message_ok"><img src="../src/img/greenCheckMark.svg" alt=""> Пароли совпадают</div>
         <br>
         <input class="button" type="submit" value="Зарегистироваться">
-        </form>
+    </form>
 </div>
 
 <footer>

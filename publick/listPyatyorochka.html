@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>чОКупить-Пятёрочка</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <img class="logo" src="../src/img/logo1.svg" alt="">
+    </div>
+    <div class="header-right" onclick="displayHideUserMenu(`header-right`, `shim-user-menu`, `user-menu`, `user-menu-item`)">
+        <div class="" id="user_with_personal_avatar" hidden></div>
+        <p class="avatar" id="user_without_personal_avatar menu_on_avatar">A</p>
+        <div class="shim-user-menu">
+            <ul class="user-menu">
+                <li class="user-menu-item"><a href="myShop.html">Мои магазины</a></li>
+                <li class="user-menu-item"><a href="NewList.html">Новый список</a></li>
+                <li class="user-menu-item"><a href="#">Настройки</a></li>
+                <li class="user-menu-item"><a href="index.html">Выйти</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<div class="content">
+    <div class="section-heading">
+        <div class="section-heading-with-button">
+            <img src="../src/img/arrowLeft.svg" alt="">
+            <div class="heading-name-list">
+                <h3 class="h3">Пятерочка</h3>
+                <h3 class="h3 count-el-of-list">2/9</h3>
+            </div>
+            <div class="group-control-buttons">
+                <div class="additional-actions-button">
+                    <img src="../src/img/3dots.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="date-list">23 янв.</div>
+    </div>
+    <div class="check-list">
+        <label for="cb1" class="row-list">
+            <input type="checkbox" id="cb1" class="check-item"> <div class="title-of-the-item">Бананы</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb2" class="row-list">
+            <input type="checkbox" id="cb2" class="check-item"> <div class="title-of-the-item">Хлебушек</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb3" class="row-list">
+            <input type="checkbox" id="cb3" class="check-item"> <div class="title-of-the-item">Ананас</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb4" class="row-list">
+            <input type="checkbox" id="cb4" class="check-item"> <div class="title-of-the-item">Треска</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb5" class="row-list">
+            <input type="checkbox" id="cb5" class="check-item"> <div class="title-of-the-item">Апельсины или килограмм или полкило</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb6" class="row-list">
+            <input type="checkbox" id="cb6" class="check-item"> <div class="title-of-the-item">Эменемс</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb7" class="row-list">
+            <input type="checkbox" id="cb7" class="check-item"> <div class="title-of-the-item">Грибы</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb8" class="row-list">
+            <input type="checkbox" id="cb8" class="check-item"> <div class="title-of-the-item">Шампанское</div>
+            <span class="check-box-fake"></span>
+        </label>
+        <label for="cb9" class="row-list">
+            <input type="checkbox" id="cb9" class="check-item"> <div class="title-of-the-item">Сыр</div>
+            <span class="check-box-fake"></span>
+        </label>
+    </div>
+    <div class="action-list">
+        <img src="../src/img/plus.svg" alt=""> <div class="title-of-the-item">Добавить элемент</div>
+    </div>
+    <div class="participants-list">
+        <span>Участники:</span>
+        <div class="participants">
+            <p class="avatar-in-list">А</p>
+            <p class="avatar-in-list">Б</p>
+            <p class="avatar-in-list">К</p>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../src/js/displayHideUserMenu.js"></script>
+<!--<script src="../src/js/checkedItemOfList.js"></script>-->
+</body>
+</html>

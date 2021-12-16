@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>чОКупить-списки по дате</title>
+        <link rel="stylesheet" href="../src/css/style.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header-left">
+                <img class="logo" src="../src/img/logo1.svg" alt="чОКупить">
+            </div>
+            <div class="header-right" onclick="displayHideUserMenu(`header-right`, `shim-user-menu`, `user-menu`, `user-menu-item`)">
+                <div class="" id="user_with_personal_avatar" hidden></div>
+                <p class="avatar" id="user_without_personal_avatar menu_on_avatar">A</p>
+                <div class="shim-user-menu">
+                    <ul class="user-menu">
+                        <li class="user-menu-item"><a href="myShop.html">Мои магазины</a></li>
+                        <li class="user-menu-item"><a href="NewList.html">Новый список</a></li>
+                        <li class="user-menu-item"><a href="#">Настройки</a></li>
+                        <li class="user-menu-item"><a href="index.html">Выйти</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="section-heading section-heading-with-button">
+                <h3 class="h3">Мои магазины</h3>
+                <div class="group-control-buttons">
+                    <div class="settings-button" onclick="displayHideUserMenu(`settings-button`, `shim-user-menu-settings`, `user-menu-settings`, `user-menu-item-s`)">
+                        <img class="button-pic" src="../src/img/settings.svg" alt="settings">
+                        <div class="shim-user-menu-settings">
+                            <ul class="user-menu-settings">
+                                <li class="user-menu-item-s"><a href="myShop.html">Все списки</a></li>
+                                <li class="user-menu-item-s"><a href="#">Сегодняшние</a></li>
+                                <li class="user-menu-item-s"><a href="#">Будущие</a></li>
+                                <li class="user-menu-item-s umis-on-date"
+                                    onclick="displayHideSubModal(
+                                        `umis-on-date`, `shim-umis-on-date`, `form-user-menu-settings-on-date`, `form-submit-on-date-btn`
+                                        )"><a href="#">По дате</a>
+                                    <div class="shim-umis-on-date subModal">
+                                        <form action="" class="form-user-menu-settings-on-date">
+                                            <h3 class="h3-form">Выбор списков по дате</h3>
+                                            <label for="on-date-from" class="form-label">
+                                                <img class="calendar-pic-input" src="../src/img/calendarGray.svg" alt="&#128197;">
+                                                <input type="text" class="form-input-on-date" id="on-date-from" placeholder="Начиная с даты">
+                                                <span class="form-label-on-date-text">YYYY-MM-DD format</span>
+                                            </label>
+                                            <label for="on-date-to" class="form-label">
+                                                <img class="calendar-pic-input" src="../src/img/calendarGray.svg" alt="&#128197;">
+                                                <input type="text" class="form-input-on-date" id="on-date-to" placeholder="По дату">
+                                                <span class="form-label-on-date-text">YYYY-MM-DD format</span>
+                                            </label>
+                                            <input type="submit" class="button form-submit-on-date-btn" value="Применить">
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="calendar-button">
+                        <img class="button-pic" src="../src/img/calendar.svg" alt="calendar">
+                    </div>
+                </div>
+            </div>
+            <div class="table-list">
+                    <div class="table-row not-today">
+                        <div class="day-calendar">25<br>янв</div>
+                        <div class="shop-name">Пятерочка</div>
+                        <div class="completed-list-items">0/32</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">А</p>
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="day-calendar">23<br>янв</div>
+                        <div class="shop-name">Пятерочка</div>
+                        <div class="completed-list-items">2/32</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">А</p>
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="day-calendar">23<br>янв</div>
+                        <div class="shop-name">IKEA</div>
+                        <div class="completed-list-items">0/12</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">20<br>янв</div>
+                        <div class="shop-name">Авоська</div>
+                        <div class="completed-list-items">0/32</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">А</p>
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">12<br>янв</div>
+                        <div class="shop-name">Дикси</div>
+                        <div class="completed-list-items">0/12</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">20<br>янв</div>
+                        <div class="shop-name">Авоська</div>
+                        <div class="completed-list-items">0/32</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">А</p>
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">12<br>янв</div>
+                        <div class="shop-name">Дикси</div>
+                        <div class="completed-list-items">0/12</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">12<br>янв</div>
+                        <div class="shop-name">Дикси</div>
+                        <div class="completed-list-items">0/12</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+                    <div class="table-row not-today">
+                        <div class="day-calendar">12<br>янв</div>
+                        <div class="shop-name">Дикси</div>
+                        <div class="completed-list-items">0/12</div>
+                        <div class="participants">
+                            <p class="avatar-in-list">Б</p>
+                            <p class="avatar-in-list">К</p>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+        <script src="../src/js/displayHideUserMenu.js"></script>
+
+    </body>
+</html>
